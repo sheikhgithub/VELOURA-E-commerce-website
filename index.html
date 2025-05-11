@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VELOURA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+
+  </head>
+  <body>
+	<div class="scrolling-announcement">
+		<div class="scroll-text">
+		  USE NEWBIE10 AND GET 10% ON YOUR FIRST ORDER | FREE SHIPPING ON PREPAID ORDERS | COD AVAILABLE
+		</div>
+	  </div>
+	
+	<section id="header">
+		<!-- Hamburger Icon -->
+<div id="menu-icon" onclick="toggleMenu()">
+	<div class="bar"></div>
+	<div class="bar"></div>
+	<div class="bar"></div>
+  </div>
+  
+  <!-- Sidebar Menu -->
+  <div id="side-menu">
+	<span id="close-btn" onclick="toggleMenu()">×</span>
+	<ul>
+	  <li>COLLECTION +</li>
+	  <li>WOMEN +</li>
+	  <li>MEN +</li>
+	  <li>DRESSES</li>
+	  <li>BESTSELLER</li>
+	  <li>THE CELEBRITY EDIT</li>
+	  <li>LUXE FOR LESS</li>
+	  <li><a href="#">Account</a></li>
+	</ul>
+  </div>
+  
+	
+		
+		<a href="https://imgbb.com/"><img src="https://i.ibb.co/JWQxg44w/Screenshot-2025-05-09-225555-removebg-preview.png" class="logo" alt="" width="100" height="100"></a>
+
+
+		<div>
+			<ul id="navbar">
+			<li><a class =active href="index.html">Home</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+			<a href="#" id="close"><i class="fa fa-times"></i></a></li>
+			</ul>
+		</div>
+		<div id="mobile">
+		<a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+		<i id="bar" class="fa fa-outdent"></i>
+		</div>
+		
+	</section>
+	
+		<section id="hero">
+			<!-- <h3>KARMA AESTHETIC WEAR</h3>
+			<h4>Fashion is the armor to survive <br>
+				the reality of everyday life.</h4>
+		<h4>Trade-in-offer</h4>
+		<h2>Super value deals</h2>
+		<h1>On all products</h1>
+		<p>Save more with coupons & up to 70% off! </p> 
+		<button>Shop Now</button> -->
+
+		<!-- Wishlist Sidebar Button -->
+		
+
+<div class="wishlist-button" onclick="toggleWishlist()">
+	<span>WISHLIST</span>
+	<div class="heart-icon">❤️</div>
+  </div>
+  
+  <!-- Wishlist Sidebar -->
+  <div id="wishlist-sidebar">
+	<h3>Your Wishlist</h3>
+	<ul id="wishlist-items">
+	  <!-- Wishlist items dynamically add honge -->
+	</ul>
+	
+  </div>
+  
+	</section>
+	<section class="category-section">
+		<h2>Shop by Category</h2>
+		<div class="category-grid">
+		  <div class="category-card">
+			<img src="https://therealb.in/cdn/shop/files/Untitled_design_18.jpg?v=1742379936" alt="Co-ords">
+			<p>CO-ORDS</p>
+		  </div>
+		  <div class="category-card">
+			<img src="https://therealb.in/cdn/shop/files/Untitled_design_8.jpg?v=1742362234" alt="Skirts">
+			<p>SKIRTS</p>
+		  </div>
+		  <div class="category-card">
+			<img src="https://therealb.in/cdn/shop/files/Untitled_design.jpg?v=1742362234" alt="Outer Wear">
+			<p>OUTER WEAR</p>
+		  </div>
+		  <div class="category-card">
+			<img src="https://therealb.in/cdn/shop/files/Untitled_design_6.jpg?v=1742362234" alt="Dresses">
+			<p>DRESSES</p>
+		  </div>
+		  <div class="category-card">
+			<img src="https://therealb.in/cdn/shop/files/Untitled_design_7.jpg?v=1742362234" alt="Pants">
+			<p>PANTS</p>
+		  </div>
+		  <div class="category-card">
+			<img src="https://therealb.in/cdn/shop/files/Untitled_design_10.jpg?v=1744974570" alt="Tops">
+			<p>TOPS</p>
+		  </div>
+		</div>
+	  </section>
+	  
+		
+		<section id="product1" class="section-p1">
+			<h2>Featured Products</h2>
+			<p>Summer Collections New Modern Design</p>
+			<a href="product.html">
+			<div class="pro-container">
+				<a href="product.html?id=1">
+				<div class="pro" >
+				<img src="img\products\apparel1.jpg" alt="">
+					<div class="des">
+						<span>adidas</span>
+						<h5>NOIR HEAVEN </h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1499</h4>
+					</div>
+					<a href="heart-icon" class="wishlist" onclick="addToWishlist('Cartoon Astronaut T-Shirts', 1499)">
+  <i class="fa fa-heart"></i>
+</a>
+
+					<a href="cart.html" onclick="addToCart('NOIR HEAVEN', 1499, 'img/products/apparel1.jpg')">
+  <i class="fa fa-shopping-cart cart"></i>
+</a>
+
+
+				</div>
+				</a>
+				<a href="product.html?id=2">
+				<div class="pro">
+				<img src="img\products\apparel2.jpg" alt="">
+					<div class="des">
+						<span>carlos Snitch</span>
+						<h5>BLUSH BREEZE</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1799</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+					
+				</div>
+				</a>
+
+
+				<a href="product.html?id=3">
+				<div class="pro">
+					<img src="https://boogzelclothing.com/cdn/shop/files/ginghampicnicruffleskirtboogzelclothing_4_1000x.jpg?v=1746060989" alt="">
+						<div class="des">
+							<span>H&M</span>
+							<h5>Twirl Muse</h5>
+							<div class="star">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							</div>
+							<h4>Rs.1999</h4>
+						</div>
+						<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+						<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+					</div>
+					</a>
+<a href="product.html?id=4">
+					<div class="pro">
+						<img src="img/products/apparel3.jpg" alt="">
+							<div class="des">
+								<span>H&M</span>
+								<h5>Shadow Bloom</h5>
+								<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								</div>
+								<h4>Rs.1799</h4>
+							</div>
+							<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+							<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+						</div>
+						</a>
+
+						<a href="product.html?id=5">
+				<div class="pro">
+				<img src="img\products\a6.jpg" alt="" height="430">
+					<div class="des">
+						<span>TheredB</span>
+						<h5>Urban Ease</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1499</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=6">
+				<div class="pro">
+				<img src="img\products\apparel4.jpg" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>GREY SLIM SKIRTS</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1599</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=7">
+				<div class="pro">
+				<img src="img\products\f5.jpg" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>FLOWER COLAR T-Shirts</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1799</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=8">
+				<div class="pro">
+				<img src="img\products\f6.jpg" alt="">
+					<div class="des">
+						<span>adidas</span>
+						<h5>CALOR TSHIRT</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1499</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div> 
+				</a>
+				<a href="product.html?id=9">
+				 <div class="pro">
+				<img src="img\products\f7.jpg" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>PRINTED PANTS</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1699</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=10">
+					<div class="pro">
+				<img src="img\products\f8.jpg" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>Purple Floral Print short top And Crop Top Set </h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1599</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div> 
+				</a>
+				<a href="product.html?id=11">
+				<div class="pro">
+					<img src="https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/lifestyle/1000014794063-White-White-1000014794063_01-2100.jpg" alt="">
+						<div class="des">
+							<span>CARLOS</span>
+							<h5>GINGER Floral Lace Layered Skirt</h5>
+							<div class="star">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							</div>
+							<h4>Rs.1599</h4>
+						</div>
+						<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+						<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+					</div>
+					</a>
+					<a href="product.html?id=12">
+					<div class="pro">
+						<img src="https://media.landmarkshops.in/cdn-cgi/image/h=1125,w=1125,q=85,fit=cover/lifestyle/1000014751930-Green-DarkGreen-1000014751930_01-2100.jpg" alt="">
+							<div class="des">
+								<span>SNITCH</span>
+								<h5>GINGER Printed Pencil Skirt</h5>
+								<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								</div>
+								<h4>Rs.1599</h4>
+							</div>
+							<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+							<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+						</div>
+						</a>
+			</div>
+		</section>
+		<!-- celebrity section -->
+		<section class="celebrity-section">
+			<h2>CELEBRITY CLOSET</h2>
+		  
+			<div class="swiper celebrity-swiper">
+			  <div class="swiper-wrapper">
+				<div class="swiper-slide celebrity-card">
+				  <img src="https://aesthetic-clothing.com/cdn/shop/products/aesthetic-clothing-full-zip-crop-hoodie-290_800x.jpg?v=1635407253" alt="Harsh Gujral">
+				  <p>Irene Kim</p>
+				  <button>VIEW PRODUCT</button>
+				</div>
+				<div class="swiper-slide celebrity-card">
+				  <img src="https://i.pinimg.com/474x/16/61/4b/16614bdd6166796a436839079a073891.jpg" alt="Aditi Rao Hydari">
+				  <p>Bae Yujin</p>
+				  <button>VIEW PRODUCT</button>
+				</div>
+				<div class="swiper-slide celebrity-card">
+					<img src="https://i.pinimg.com/564x/f6/c8/d9/f6c8d9e9e60ee191562320bf7ea890fa.jpg" alt="Harsh Gujral">
+					<p>Baek Eun-hye</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://nextluxury.com/wp-content/uploads/retro-style-grunge-outfit.jpg" alt="Harsh Gujral">
+					<p>Choi Yeo-jin</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://i.pinimg.com/originals/8c/85/31/8c8531070702ef01d394cddd0f2c1514.jpg" alt="Harsh Gujral">
+					<p>Go Joon-hee</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://i.pinimg.com/736x/2f/93/25/2f9325b3705972917383da1eb1ed03c3.jpg" alt="Harsh Gujral">
+					<p>Lee Si-yeon</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://i.pinimg.com/736x/27/2d/1e/272d1e6d263757699a05eef89e14fb45.jpg" alt="Harsh Gujral">
+					<p>Se-rim Moon</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://i.pinimg.com/736x/39/f7/3f/39f73f877550a834ac925826151ced1b.jpg" alt="Harsh Gujral">
+					<p>Oh Ah-yeon</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE1Yjl_UfkBZP6lzInvmBQCU94WjbbUA-SqwlC1z2gjZPONoncILWEyTA1fogN0FID6nI&usqp=CAU" alt="Harsh Gujral">
+					<p>Park Han-sol</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+				  <div class="swiper-slide celebrity-card">
+					<img src="https://i.pinimg.com/originals/ea/d3/c4/ead3c4030b715ca01ed6e891d7fc3b81.jpg" alt="Harsh Gujral">
+					<p>Ji Yi-soo</p>
+					<button>VIEW PRODUCT</button>
+				  </div>
+
+				<!-- More slides... -->
+			  </div>
+			</div>
+		  </section>
+		  
+		  
+		
+		<section id="banner"class="section-m1">
+			<h4>Repair Services</h4>
+			<h2>Up to <span>70% off </span> - all t-shirts & Accessories</h2>
+			<button class="normal">Explore More</button>
+		</section>
+		<section id="product1" class="section-p1">
+			<h2>New Arrivals</h2>
+			<p>Summer Collections New Modern Design</p>
+			<div class="pro-container">
+				<a href="product.html?id=13">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/Img3188_d7f47733-0857-4782-b6ce-2b7cd86f9132_400x.jpg?v=1683372601" alt="">
+					<div class="des">
+						<span>THEREALB</span>
+						<h5>SUNSET HARVEST LARGE HAT</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1599</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div> 
+				</a>
+				<a href="product.html?id=14">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/Img2934_89a057a2-b858-42b0-903f-4af7a16fc193_400x.jpg?v=1683372582" alt="">
+					<div class="des">
+						<span>THEREALB</span>
+						<h5>TRAVELER'S TALE LARGE HAT</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1999</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div> 
+				</a>
+				<a href="product.html?id=15">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/IMG_2698_400x.jpg?v=1720088485" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>HIDDEN GEM STRAPLESS MIDI DRESS</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1499</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=16">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/25_400x.jpg?v=1712468519" alt="">
+					<div class="des">
+						<span>THEREALB</span>
+						<h5>ENCHANTED GARDEN FLORAL MINI DRESS</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1799</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=17">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/Photo06-05-23_114912AM_400x.jpg?v=1720077546" alt="">
+					<div class="des">
+						<span>F&B</span>
+						<h5>FIELD OF DREAMS SLIP DRESS</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1899</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=18">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/Img3021_a0edea54-c000-4205-988c-7be450dbd5b1_400x.jpg?v=1742549712" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>MULTICOLOUR PRINTED CROP TOP AND SHORTS CASUALS CO ORD SET </h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1299</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=19">
+				<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/Img3069_80c967fe-0107-45e9-be7b-87b9a0051d37_400x.jpg?v=1742545589" alt="">
+					<div class="des">
+						<span>CARLO</span>
+						<h5>Multicolour Floral Print Long Skirt And Crop Top Set</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1999</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				<a href="product.html?id=20">
+					<div class="pro">
+				<img src="https://therealb.in/cdn/shop/files/Img2834_d3aa450b-8a0c-4184-af53-278036a2af21_400x.jpg?v=1683372565" alt="">
+					<div class="des">
+						<span>H&M</span>
+						<h5>Nomadic Heart Hat</h5>
+						<div class="star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						</div>
+						<h4>Rs.1199</h4>
+					</div>
+					<a href="#" class="wishlist"><i class="fa fa-heart"></i></a>
+					<a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+				</div>
+				</a>
+				
+			</div>
+		</section>
+		
+		<section id="sm-banner" class="section-p1">
+	
+		<div class="banner-box">
+			<h4>crazy deals</h4>
+			<h2>buy 1 get 1 free</h2>
+			<span>The best classic dress is on sale at cora</span>
+			<button class="white">Learn More</button>
+		
+		</div>
+		<div class="banner-box banner-box2">
+			<h4>spring/summer</h4>
+			<h2>upcomming season</h2>
+			<span>The best classic dress is on sale at cora</span>
+			<button class="white">Learn More</button>
+		
+		</div>
+	
+	</section>
+	
+	<section id="banner3">
+		<div class="banner-box">
+			<h2>SEASONAL SALE</h2>
+			<h3>Winter Collection- 50% OFF</h3>
+		</div>
+		<div class="banner-box banner-box2">
+			<h2>NEW FOOTWEAR COLLECTION</h2>
+			<h3>Winter Collection- 50% OFF</h3>
+		</div>
+		<div class="banner-box banner-box3">
+			<h2>T-Shirts</h2>
+			<h3>Winter Collection- 50% OFF</h3>
+		</div>
+	</section>
+	
+		<section id="newsletter" class="section-p1 section-m1">
+		<div class="newtext">
+			<h4>Sign Up For Newsletters</h4>
+			<p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+		</div>
+		<div class="form">
+		<input type="text" placeholder="Your Email Address"/>
+		<button class="normal">SignUp</button>
+		</div>
+	</section>
+	<footer class="section-p1">
+	<div class="col">
+		<a href="#"><img src="https://i.ibb.co/JWQxg44w/Screenshot-2025-05-09-225555-removebg-preview.png" class="logo" alt="" width="100" height="100"></a>
+			<!-- <h4>Contact</h4>
+			<p><strong>Address:</strong> G.B.Road, Thane, Mumbai</p>
+			<p><strong>Phone:</strong> +91 222 365/(+91) 91 2345 6789</p>
+			<p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p> -->
+			<div class="follow">
+				<h4>Follows us</h4>
+				<div class="icon">
+					<i class="fa fa-facebook-f"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-pinterest-p"></i>
+					<i class="fa fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<h4>About</h4>
+			<a href="#">About us</a>
+			<a href="#">Delivery Information</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms & Conditions</a>
+			<a href="#">Contact us</a>
+			
+		</div>
+		<div class="col">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">View Cart</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Track My Order</a>
+			<a href="#">Help</a>
+			
+		</div>
+		<div class="col install">
+			<h4>Install App</h4>
+			<p>From app store or google play</p>
+			<div class="row">
+				<img src="img/pay/app.jpg" alt="">
+				<img src="img/pay/play.jpg" alt="">
+			</div>
+			<p>Secured Payment Gateway</p>
+			<img src="img/pay/pay.png" alt="">
+		</div>
+		<div class="copyright">
+			<p>@ 2025, - VELOURA</p>
+		</div>
+		</footer>
+		<script src="script.js"></script>
+		<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+	var swiper = new Swiper('.celebrity-swiper', {
+	  slidesPerView: 1.2,
+	  spaceBetween: 20,
+	  loop: true,
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	  },
+	  breakpoints: {
+		640: {
+		  slidesPerView: 2.5,
+		},
+		1024: {
+		  slidesPerView: 4,
+		}
+	  }
+	});
+  </script>
+  
+  </body>
+</html>
